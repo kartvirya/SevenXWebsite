@@ -13,7 +13,7 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ id, title, description, icon, features }: ServiceCardProps) {
   return (
-    <Link href={`/services/${id}`}>
+    <Link href={`/services/${id.toString()}`}>
       <motion.div 
         className="bg-[#1A1A1A] p-8 rounded-lg hover:bg-[#222] transition-colors duration-300 cursor-pointer"
         whileHover="hover"
