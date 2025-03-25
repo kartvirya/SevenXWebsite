@@ -6,6 +6,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+const host = '0.0.0.0';
+const port = 5000;
+
 app.use((req, res, next) => {
   const start = Date.now();
   const path = req.path;
@@ -54,6 +57,9 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     serveStatic(app);
+    app.listen(port, host, () => {
+      console.log(`Server running at http://${host}:${port}`);
+    });
   }
 
   // ALWAYS serve the app on port 5000
