@@ -13,15 +13,17 @@ import { SERVICES, PORTFOLIO_ITEMS, TESTIMONIALS, BLOG_POSTS } from '@/lib/const
 
 export default function Home() {
   return (
-    <motion.div 
+    <motion.div
       initial="hidden"
       animate="visible"
       exit="exit"
       variants={pageTransition}
+      className="pt-24 relative"
     >
+      <div className="gradient-overlay" />
       {/* Hero Section */}
       <HeroSection />
-      
+
       {/* Services Section */}
       <section id="services" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
@@ -38,7 +40,7 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/services">
               <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
@@ -48,7 +50,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Portfolio Preview */}
       <section id="portfolio-preview" className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
@@ -65,7 +67,7 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/portfolio">
               <Button className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
@@ -75,7 +77,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Testimonials Preview */}
       <section id="testimonials-preview" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
@@ -92,7 +94,7 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-          
+
           <div className="text-center mt-8">
             <Link href="/testimonials">
               <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
@@ -102,7 +104,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* Blog Preview */}
       <section id="blog-preview" className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
@@ -119,7 +121,7 @@ export default function Home() {
               </AnimatedSection>
             ))}
           </div>
-          
+
           <div className="text-center mt-12">
             <Link href="/blog">
               <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
@@ -129,13 +131,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
+
       {/* CTA Section */}
       <section className="py-16 bg-[#0D221E]/70 relative overflow-hidden">
         <div className="absolute inset-0 bg-[var(--brand-primary)] opacity-10 z-0"></div>
         <div className="absolute -right-32 -top-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
         <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
-        
+
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Ready to Grow Your Business?</h2>
