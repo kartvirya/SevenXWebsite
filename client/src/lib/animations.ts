@@ -113,15 +113,29 @@ export const accordionItem: Variants = {
 
 // Mobile menu animation
 export const mobileMenu: Variants = {
-  hidden: { height: 0, opacity: 0 },
+  hidden: { 
+    y: -20, 
+    opacity: 0,
+    transition: {
+      duration: 0.2,
+    }
+  },
   visible: { 
-    height: "auto", 
-    opacity: 1, 
-    transition: { duration: 0.3, ease: "easeOut" }
+    y: 0, 
+    opacity: 1,
+    transition: { 
+      duration: 0.3, 
+      ease: [0.25, 0.1, 0.25, 1.0],
+      staggerChildren: 0.05,
+      delayChildren: 0.05
+    }
   },
   exit: { 
-    height: 0, 
-    opacity: 0, 
-    transition: { duration: 0.2, ease: "easeIn" }
+    y: -10, 
+    opacity: 0,
+    transition: { 
+      duration: 0.2, 
+      ease: [0.25, 0.1, 0.25, 1.0] 
+    }
   }
 };

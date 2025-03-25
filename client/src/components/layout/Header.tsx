@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { mobileMenu } from '@/lib/animations';
 import { Menu, X } from 'lucide-react';
+import { useIsMobile } from '@/hooks/use-mobile';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -19,6 +20,7 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [location] = useLocation();
+  const isMobile = useIsMobile();
   
   // Track scroll position to change header styling
   useEffect(() => {
@@ -35,9 +37,24 @@ export default function Header() {
     setIsMenuOpen(false);
   }, [location]);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobile) {
+      if (isMenuOpen) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMenuOpen, isMobile]);
+
   return (
     <header 
-      className={`fixed top-0 left-0 w-full z-50 bg-[#111111]/95 backdrop-blur-md border-b border-white/10 transition-all duration-300 ${
+      className={`fixed top-0 left-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10 transition-all duration-300 ${
         isScrolled ? 'py-2 shadow-lg' : 'py-4'
       }`}
     >
@@ -45,7 +62,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold font-heading text-white">7x<span className="text-[#16A34A]">Solution</span></span>
+            <span className="text-2xl font-bold font-heading text-white">7x<span className="text-[#6FCFAB]">Solution</span></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -54,7 +71,7 @@ export default function Header() {
               <Link 
                 key={link.href} 
                 href={link.href}
-                className={`relative text-white font-medium hover:text-[#16A34A] transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#16A34A] after:left-0 after:bottom-[-4px] after:transition-all after:duration-300 ${
+                className={`relative text-white font-medium hover:text-[#6FCFAB] transition-colors duration-300 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bg-[#6FCFAB] after:left-0 after:bottom-[-4px] after:transition-all after:duration-300 ${
                   location === link.href ? 'after:w-full' : 'hover:after:w-full'
                 }`}
               >
@@ -74,7 +91,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium transition-all duration-300 transform hover:scale-105">
+            <Button className="bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium transition-all duration-300 transform hover:scale-105">
               Get Started
             </Button>
           </Link>
@@ -85,26 +102,26 @@ export default function Header() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="md:hidden overflow-hidden bg-[#111111]/95 backdrop-blur-md"
+            className="md:hidden fixed inset-0 top-[72px] h-[calc(100vh-72px)] z-40 overflow-hidden bg-black/95 backdrop-blur-md"
             initial="hidden"
             animate="visible"
             exit="exit"
             variants={mobileMenu}
           >
-            <nav className="flex flex-col space-y-4 py-4 px-4">
+            <nav className="flex flex-col space-y-8 py-10 px-8">
               {navLinks.map((link) => (
                 <Link 
                   key={link.href} 
                   href={link.href}
-                  className={`text-white font-medium hover:text-[#16A34A] transition-colors duration-300 ${
-                    location === link.href ? 'text-[#16A34A]' : ''
+                  className={`text-xl text-white font-medium hover:text-[#6FCFAB] transition-colors duration-300 ${
+                    location === link.href ? 'text-[#6FCFAB]' : ''
                   }`}
                 >
                   {link.label}
                 </Link>
               ))}
-              <Link href="/contact">
-                <Button className="w-full bg-[#16A34A] text-white font-medium">
+              <Link href="/contact" className="mt-6">
+                <Button className="w-full bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium py-6 text-lg">
                   Get Started
                 </Button>
               </Link>
