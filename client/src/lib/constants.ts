@@ -63,6 +63,50 @@ export const SERVICES = [
   },
   {
     id: 4,
+    title: "Web Development",
+    description: "Create stunning, responsive websites that drive conversions and enhance your brand's online presence.",
+    icon: "laptop-code",
+    features: [
+      "Responsive Website Design",
+      "E-commerce Solutions",
+      "Landing Pages & Microsites"
+    ]
+  },
+  {
+    id: 5,
+    title: "Mobile App Development",
+    description: "Build cutting-edge mobile applications for iOS and Android that deliver exceptional user experiences.",
+    icon: "mobile-alt",
+    features: [
+      "Native iOS & Android Apps",
+      "Cross-Platform Development",
+      "App Store Optimization"
+    ]
+  },
+  {
+    id: 6,
+    title: "Web Application Development",
+    description: "Create powerful, scalable web applications with modern technologies and best practices.",
+    icon: "code",
+    features: [
+      "Full-Stack Development",
+      "SaaS Applications",
+      "API Development & Integration"
+    ]
+  },
+  {
+    id: 7,
+    title: "IT Consulting Services",
+    description: "Strategic technology advisory to help your business leverage the right IT solutions for growth.",
+    icon: "server",
+    features: [
+      "IT Strategy & Architecture",
+      "Cloud Migration & Management",
+      "Digital Transformation"
+    ]
+  },
+  {
+    id: 8,
     title: "Social Media Marketing",
     description: "Build community and drive engagement with strategic social media campaigns.",
     icon: "share-alt",
@@ -73,7 +117,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 5,
+    id: 9,
     title: "Email Marketing",
     description: "Nurture leads and drive conversions with targeted email campaigns and automation.",
     icon: "envelope",
@@ -84,7 +128,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 6,
+    id: 10,
     title: "Analytics & Reporting",
     description: "Gain actionable insights with comprehensive analytics and custom reporting.",
     icon: "chart-bar",
