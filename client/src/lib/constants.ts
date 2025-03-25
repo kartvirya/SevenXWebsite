@@ -12,14 +12,14 @@ export const COMPANY_EMAIL = "info@7xsolution.com";
 export const COMPANY_EMAIL_SUPPORT = "support@7xsolution.com";
 export const COMPANY_ADDRESS = "123 Marketing Street, New York, NY 10001";
 export const COMPANY_HOURS = "Mon-Fri: 9AM - 6PM";
-export const COMPANY_FOUNDING_YEAR = 2008;
-export const COMPANY_COPYRIGHT_YEAR = 2023;
+export const COMPANY_FOUNDING_YEAR = 2025;
+export const COMPANY_COPYRIGHT_YEAR = 2025;
 
 // Company stats
 export const COMPANY_STATS = {
   clientSatisfaction: "98%",
-  projectsCompleted: "250+",
-  yearsExperience: "15+"
+  projectsCompleted: "50+",
+  yearsExperience: "New in 2025"
 };
 
 // Social media links
@@ -150,7 +150,7 @@ export const TEAM_MEMBERS = [
     id: 1,
     name: "James Wilson",
     role: "CEO & Founder",
-    bio: "Marketing strategist with 15+ years of experience in digital transformation.",
+    bio: "Innovative marketing strategist and tech entrepreneur with a vision for digital transformation.",
     image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
     social: {
       linkedin: "#",
@@ -282,11 +282,11 @@ export const TESTIMONIALS = [
 export const BLOG_POSTS = [
   {
     id: 1,
-    title: "10 SEO Best Practices That Still Work in 2023",
+    title: "10 SEO Best Practices That Still Work in 2025",
     excerpt: "Discover the evergreen SEO strategies that continue to deliver results even as algorithms evolve.",
-    slug: "seo-best-practices-2023",
+    slug: "seo-best-practices-2025",
     category: "SEO",
-    date: "June 15, 2023",
+    date: "March 15, 2025",
     readTime: "8 min read",
     author: {
       name: "James Wilson",
@@ -336,11 +336,11 @@ export const BLOG_POSTS = [
   },
   {
     id: 2,
-    title: "The Future of Social Media Marketing: Trends to Watch",
+    title: "The Future of Social Media Marketing: Trends to Watch in 2025",
     excerpt: "Explore emerging social media trends and how they're reshaping digital marketing strategies.",
-    slug: "future-social-media-marketing-trends",
+    slug: "future-social-media-marketing-trends-2025",
     category: "Social Media",
-    date: "May 28, 2023",
+    date: "February 28, 2025",
     readTime: "6 min read",
     author: {
       name: "Sarah Johnson",
@@ -396,11 +396,11 @@ export const BLOG_POSTS = [
   },
   {
     id: 3,
-    title: "Email Marketing Automation: A Complete Guide for 2023",
+    title: "Email Marketing Automation: A Complete Guide for 2025",
     excerpt: "Learn how to leverage automation to create personalized email campaigns that convert.",
-    slug: "email-marketing-automation-guide-2023",
+    slug: "email-marketing-automation-guide-2025",
     category: "Email Marketing",
-    date: "May 10, 2023",
+    date: "January 15, 2025",
     readTime: "5 min read",
     author: {
       name: "David Rodriguez",
