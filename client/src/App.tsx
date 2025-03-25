@@ -47,6 +47,7 @@ function App() {
           <Router />
         </main>
         <Footer />
+        <Chatbot />
       </div>
       <Toaster />
     </QueryClientProvider>

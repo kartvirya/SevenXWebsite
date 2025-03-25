@@ -62,18 +62,18 @@ export default function Chatbot() {
 
     try {
       // Send request to chatbot API
-      const response = await apiRequest<{ reply: string; success: boolean }>({
+      const response = await apiRequest({
         url: '/api/chatbot',
         method: 'POST',
         body: { message: message.trim() }
       });
 
-      if (response.success && response.reply) {
+      if (response && typeof response === 'object' && 'reply' in response) {
         // Add bot response to chat
         setMessages((prev) => [
           ...prev,
           {
-            text: response.reply,
+            text: response.reply as string,
             isUser: false,
             timestamp: new Date()
           }

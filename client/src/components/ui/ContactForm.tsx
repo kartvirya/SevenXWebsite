@@ -42,7 +42,11 @@ export default function ContactForm() {
       // Remove privacyPolicy as it's only for client-side validation
       const { privacyPolicy, ...contactData } = data;
       
-      await apiRequest('POST', '/api/contact', contactData);
+      await apiRequest({
+        url: '/api/contact',
+        method: 'POST',
+        body: contactData
+      });
       
       toast({
         title: "Message sent successfully!",
