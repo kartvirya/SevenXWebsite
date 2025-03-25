@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 // Layout
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import Chatbot from "@/components/ui/Chatbot";
 
 // Pages
 import Home from "@/pages/Home";
