@@ -26,7 +26,7 @@ export default function Home() {
       <section id="services" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Services</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Services</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Digital Marketing Solutions</h2>
             <p className="text-gray-400 text-lg">We offer a comprehensive suite of services designed to maximize your online presence and drive measurable results.</p>
           </AnimatedSection>
@@ -41,7 +41,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/services">
-              <Button variant="outline" className="border-white/30 hover:border-[#16A34A]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
+              <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
                 View All Services
               </Button>
             </Link>
@@ -53,7 +53,7 @@ export default function Home() {
       <section id="portfolio-preview" className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Work</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Work</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Featured Projects</h2>
             <p className="text-gray-400 text-lg">Explore our portfolio of successful digital marketing campaigns and transformative solutions.</p>
           </AnimatedSection>
@@ -68,7 +68,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/portfolio">
-              <Button className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
+              <Button className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
                 View All Projects
               </Button>
             </Link>
@@ -80,7 +80,7 @@ export default function Home() {
       <section id="testimonials-preview" className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Testimonials</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Testimonials</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">What Our Clients Say</h2>
             <p className="text-gray-400 text-lg">Discover how we've helped businesses like yours achieve exceptional results.</p>
           </AnimatedSection>
@@ -95,7 +95,7 @@ export default function Home() {
           
           <div className="text-center mt-8">
             <Link href="/testimonials">
-              <Button variant="outline" className="border-white/30 hover:border-[#16A34A]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
+              <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
                 Read More Testimonials
               </Button>
             </Link>
@@ -107,7 +107,7 @@ export default function Home() {
       <section id="blog-preview" className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Blog</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Blog</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Latest Articles & Insights</h2>
             <p className="text-gray-400 text-lg">Stay up to date with the latest trends and strategies in digital marketing.</p>
           </AnimatedSection>
@@ -122,7 +122,7 @@ export default function Home() {
           
           <div className="text-center mt-12">
             <Link href="/blog">
-              <Button variant="outline" className="border-white/30 hover:border-[#16A34A]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
+              <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5">
                 View All Articles
               </Button>
             </Link>
@@ -132,9 +132,9 @@ export default function Home() {
       
       {/* CTA Section */}
       <section className="py-16 bg-[#0D221E]/70 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#16A34A] opacity-10 z-0"></div>
-        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
-        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute inset-0 bg-[var(--brand-primary)] opacity-10 z-0"></div>
+        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
@@ -142,7 +142,7 @@ export default function Home() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Partner with us to achieve sustainable growth through innovative digital marketing strategies tailored to your business goals.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact">
-                <Button className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
+                <Button className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
                   Start Your Journey
                 </Button>
               </Link>

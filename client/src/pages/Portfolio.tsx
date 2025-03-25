@@ -24,7 +24,7 @@ export default function Portfolio() {
       <section className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Work</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Work</span>
             <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Featured Projects</h1>
             <p className="text-gray-400 text-lg">Explore our portfolio of successful digital marketing campaigns and transformative solutions.</p>
           </AnimatedSection>
@@ -37,8 +37,8 @@ export default function Portfolio() {
                 onClick={() => setActiveCategory(category)}
                 className={`${
                   activeCategory === category 
-                    ? 'bg-[#16A34A] text-white' 
-                    : 'bg-[#111111]/50 border border-white/10 text-white hover:bg-[#16A34A]/10'
+                    ? 'bg-[var(--brand-primary)] text-white' 
+                    : 'bg-[#111111]/50 border border-white/10 text-white hover:bg-[var(--brand-primary)]/10'
                 } px-5 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-colors`}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -75,8 +75,8 @@ export default function Portfolio() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <AnimatedSection className="bg-[#1A1A1A] p-8 rounded-lg border border-white/10 text-center">
-              <div className="w-16 h-16 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 19v-8.93a2 2 0 01.89-1.664l7-4.666a2 2 0 012.22 0l7 4.666A2 2 0 0121 10.07V19M3 19a2 2 0 002 2h14a2 2 0 002-2M3 19l6.75-4.5M21 19l-6.75-4.5M3 10l6.75 4.5M21 10l-6.75 4.5m0 0l-1.14.76a2 2 0 01-2.22 0l-1.14-.76" />
                 </svg>
               </div>
@@ -85,8 +85,8 @@ export default function Portfolio() {
             </AnimatedSection>
             
             <AnimatedSection className="bg-[#1A1A1A] p-8 rounded-lg border border-white/10 text-center" delay={0.1}>
-              <div className="w-16 h-16 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -95,8 +95,8 @@ export default function Portfolio() {
             </AnimatedSection>
             
             <AnimatedSection className="bg-[#1A1A1A] p-8 rounded-lg border border-white/10 text-center" delay={0.2}>
-              <div className="w-16 h-16 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
@@ -105,8 +105,8 @@ export default function Portfolio() {
             </AnimatedSection>
             
             <AnimatedSection className="bg-[#1A1A1A] p-8 rounded-lg border border-white/10 text-center" delay={0.3}>
-              <div className="w-16 h-16 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                 </svg>
               </div>
@@ -142,7 +142,7 @@ export default function Portfolio() {
       <section className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Case Study</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Case Study</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Featured Success Story</h2>
             <p className="text-gray-400 text-lg">Learn how we helped TechVision SaaS achieve remarkable growth.</p>
           </AnimatedSection>
@@ -165,8 +165,8 @@ export default function Portfolio() {
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start">
-                  <div className="w-10 h-10 bg-[#16A34A]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
-                    <span className="text-[#16A34A] font-bold">1</span>
+                  <div className="w-10 h-10 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
+                    <span className="text-[var(--brand-primary)] font-bold">1</span>
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Challenge</h4>
@@ -175,8 +175,8 @@ export default function Portfolio() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 h-10 bg-[#16A34A]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
-                    <span className="text-[#16A34A] font-bold">2</span>
+                  <div className="w-10 h-10 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
+                    <span className="text-[var(--brand-primary)] font-bold">2</span>
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Solution</h4>
@@ -185,8 +185,8 @@ export default function Portfolio() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-10 h-10 bg-[#16A34A]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
-                    <span className="text-[#16A34A] font-bold">3</span>
+                  <div className="w-10 h-10 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mr-4 shrink-0">
+                    <span className="text-[var(--brand-primary)] font-bold">3</span>
                   </div>
                   <div>
                     <h4 className="font-bold mb-1">Results</h4>
@@ -197,7 +197,7 @@ export default function Portfolio() {
               
               <motion.a 
                 href="#"
-                className="inline-flex items-center text-white bg-[#16A34A] hover:bg-[#16A34A]/90 py-2 px-4 rounded-md transition-colors"
+                className="inline-flex items-center text-white bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 py-2 px-4 rounded-md transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >

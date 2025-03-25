@@ -76,7 +76,7 @@ export default function ContactForm() {
             <input 
               type="text" 
               id="name"
-              className={`w-full bg-[#111111] border ${errors.name ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]`}
+              className={`w-full bg-[#111111] border ${errors.name ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]`}
               placeholder="Your name"
               {...register('name')}
             />
@@ -92,7 +92,7 @@ export default function ContactForm() {
             <input 
               type="email" 
               id="email"
-              className={`w-full bg-[#111111] border ${errors.email ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]`}
+              className={`w-full bg-[#111111] border ${errors.email ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]`}
               placeholder="Your email"
               {...register('email')}
             />
@@ -109,7 +109,7 @@ export default function ContactForm() {
           <input 
             type="tel" 
             id="phone"
-            className="w-full bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]"
+            className="w-full bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]"
             placeholder="Your phone (optional)"
             {...register('phone')}
           />
@@ -122,7 +122,7 @@ export default function ContactForm() {
           <input 
             type="text" 
             id="subject"
-            className={`w-full bg-[#111111] border ${errors.subject ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]`}
+            className={`w-full bg-[#111111] border ${errors.subject ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]`}
             placeholder="How can we help you?"
             {...register('subject')}
           />
@@ -138,7 +138,7 @@ export default function ContactForm() {
           <textarea 
             id="message" 
             rows={5}
-            className={`w-full bg-[#111111] border ${errors.message ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]`}
+            className={`w-full bg-[#111111] border ${errors.message ? 'border-red-500' : 'border-white/10'} rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]`}
             placeholder="Tell us about your project..."
             {...register('message')}
           ></textarea>
@@ -151,7 +151,7 @@ export default function ContactForm() {
           <label className="flex items-center">
             <input 
               type="checkbox" 
-              className="w-5 h-5 rounded accent-[#16A34A]"
+              className="w-5 h-5 rounded accent-[var(--brand-primary)]"
               {...register('privacyPolicy')}
             />
             <span className="ml-2 text-sm text-gray-300">
@@ -166,7 +166,7 @@ export default function ContactForm() {
         <motion.button 
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
+          className="w-full bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300 transform hover:scale-105 disabled:opacity-70 disabled:cursor-not-allowed"
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
         >

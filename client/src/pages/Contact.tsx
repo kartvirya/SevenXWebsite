@@ -18,7 +18,7 @@ export default function Contact() {
       <section className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Contact Us</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Contact Us</span>
             <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Get In Touch</h1>
             <p className="text-gray-400 text-lg">Ready to grow your business? Let's start a conversation about your goals.</p>
           </AnimatedSection>
@@ -30,8 +30,8 @@ export default function Contact() {
                 <h3 className="text-xl font-bold font-heading mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                      <MapPin className="text-[#16A34A]" />
+                    <div className="w-12 h-12 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
+                      <MapPin className="text-[var(--brand-primary)]" />
                     </div>
                     <div>
                       <h4 className="font-medium text-white mb-1">Our Location</h4>
@@ -40,8 +40,8 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                      <Mail className="text-[#16A34A]" />
+                    <div className="w-12 h-12 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
+                      <Mail className="text-[var(--brand-primary)]" />
                     </div>
                     <div>
                       <h4 className="font-medium text-white mb-1">Email Us</h4>
@@ -51,8 +51,8 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                      <Phone className="text-[#16A34A]" />
+                    <div className="w-12 h-12 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
+                      <Phone className="text-[var(--brand-primary)]" />
                     </div>
                     <div>
                       <h4 className="font-medium text-white mb-1">Call Us</h4>
@@ -62,8 +62,8 @@ export default function Contact() {
                   </div>
                   
                   <div className="flex items-start">
-                    <div className="w-12 h-12 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
-                      <Clock className="text-[#16A34A]" />
+                    <div className="w-12 h-12 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4 shrink-0">
+                      <Clock className="text-[var(--brand-primary)]" />
                     </div>
                     <div>
                       <h4 className="font-medium text-white mb-1">Working Hours</h4>
@@ -93,7 +93,7 @@ export default function Contact() {
       <section className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">FAQ</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">FAQ</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Frequently Asked Questions</h2>
             <p className="text-gray-400 text-lg">Find answers to common questions about our services and process.</p>
           </AnimatedSection>

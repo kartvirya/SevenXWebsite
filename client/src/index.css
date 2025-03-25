@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --brand-primary: #6FCFAB;
+  --brand-dark: #111111;
+}
+
 @layer base {
   * {
     @apply border-border;

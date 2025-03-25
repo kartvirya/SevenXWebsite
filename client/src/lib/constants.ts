@@ -1,3 +1,7 @@
+// Brand colors
+export const BRAND_PRIMARY = "#6FCFAB";
+export const BRAND_DARK = "#111111";
+
 // Company information
 export const COMPANY_NAME = "7xSolution";
 export const COMPANY_TAGLINE = "Grow Your Business 7x Faster With Our Digital Solutions";

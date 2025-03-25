@@ -17,8 +17,8 @@ export default function ServiceCard({ title, description, icon, features }: Serv
       whileHover="hover"
       variants={serviceCardHover}
     >
-      <div className="w-16 h-16 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mb-6">
-        <i className={`fas fa-${icon} text-2xl text-[#16A34A]`}></i>
+      <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mb-6">
+        <i className={`fas fa-${icon} text-2xl text-[var(--brand-primary)]`}></i>
       </div>
       
       <h3 className="text-xl font-bold font-heading mb-4">{title}</h3>
@@ -27,7 +27,7 @@ export default function ServiceCard({ title, description, icon, features }: Serv
       <ul className="space-y-2 mb-6">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
-            <CheckIcon className="h-4 w-4 text-[#16A34A] mt-1 mr-2" />
+            <CheckIcon className="h-4 w-4 text-[var(--brand-primary)] mt-1 mr-2" />
             <span className="text-sm text-gray-300">{feature}</span>
           </li>
         ))}
@@ -35,7 +35,7 @@ export default function ServiceCard({ title, description, icon, features }: Serv
       
       <Link href="/contact">
         <motion.div 
-          className="inline-flex items-center text-[#16A34A] hover:text-white group cursor-pointer"
+          className="inline-flex items-center text-[var(--brand-primary)] hover:text-white group cursor-pointer"
           whileHover={{ x: 3 }}
         >
           <span className="group-hover:underline">Learn More</span>

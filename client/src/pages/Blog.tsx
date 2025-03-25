@@ -32,7 +32,7 @@ export default function Blog() {
       <section className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Blog</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Blog</span>
             <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Latest Articles & Insights</h1>
             <p className="text-gray-400 text-lg">Stay up to date with the latest trends and strategies in digital marketing.</p>
           </AnimatedSection>
@@ -44,7 +44,7 @@ export default function Blog() {
                 <input
                   type="text"
                   placeholder="Search articles..."
-                  className="w-full bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A] pl-12"
+                  className="w-full bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)] pl-12"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -58,8 +58,8 @@ export default function Blog() {
                     onClick={() => setActiveCategory(category)}
                     className={`${
                       activeCategory === category 
-                        ? 'bg-[#16A34A] text-white' 
-                        : 'bg-[#111111] border border-white/10 text-white hover:bg-[#16A34A]/10'
+                        ? 'bg-[var(--brand-primary)] text-white' 
+                        : 'bg-[#111111] border border-white/10 text-white hover:bg-[var(--brand-primary)]/10'
                     } px-4 py-2 rounded-md text-sm font-medium whitespace-nowrap transition-colors`}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -92,21 +92,21 @@ export default function Blog() {
           <div className="flex justify-center mt-12">
             <div className="flex space-x-2">
               <motion.button
-                className="w-10 h-10 rounded-md bg-[#16A34A] text-white flex items-center justify-center"
+                className="w-10 h-10 rounded-md bg-[var(--brand-primary)] text-white flex items-center justify-center"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 1
               </motion.button>
               <motion.button
-                className="w-10 h-10 rounded-md bg-[#111111] border border-white/10 text-white flex items-center justify-center hover:bg-[#16A34A]/10"
+                className="w-10 h-10 rounded-md bg-[#111111] border border-white/10 text-white flex items-center justify-center hover:bg-[var(--brand-primary)]/10"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 2
               </motion.button>
               <motion.button
-                className="w-10 h-10 rounded-md bg-[#111111] border border-white/10 text-white flex items-center justify-center hover:bg-[#16A34A]/10"
+                className="w-10 h-10 rounded-md bg-[#111111] border border-white/10 text-white flex items-center justify-center hover:bg-[var(--brand-primary)]/10"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -129,12 +129,12 @@ export default function Blog() {
                 <input
                   type="email"
                   placeholder="Enter your email address"
-                  className="flex-1 bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[#16A34A]"
+                  className="flex-1 bg-[#111111] border border-white/10 rounded-md py-3 px-4 text-white placeholder-gray-500 focus:outline-none focus:border-[var(--brand-primary)]"
                   required
                 />
                 <motion.button 
                   type="submit"
-                  className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300"
+                  className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-6 rounded-md transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -160,22 +160,22 @@ export default function Blog() {
             {categories.filter(cat => cat !== 'All').map((category, index) => (
               <AnimatedSection key={index} delay={index * 0.1}>
                 <div 
-                  className="bg-[#111111] p-8 rounded-lg border border-white/10 text-center cursor-pointer hover:border-[#16A34A]/50 transition-colors"
+                  className="bg-[#111111] p-8 rounded-lg border border-white/10 text-center cursor-pointer hover:border-[var(--brand-primary)]/50 transition-colors"
                   onClick={() => setActiveCategory(category)}
                 >
-                  <div className="w-16 h-16 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-4">
                     {category === 'SEO' && (
-                      <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                       </svg>
                     )}
                     {category === 'Social Media' && (
-                      <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                       </svg>
                     )}
                     {category === 'Email Marketing' && (
-                      <svg className="w-8 h-8 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="w-8 h-8 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                       </svg>
                     )}

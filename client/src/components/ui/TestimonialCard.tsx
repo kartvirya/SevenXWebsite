@@ -17,11 +17,11 @@ export default function TestimonialCard({ name, role, text, rating, image }: Tes
     const hasHalfStar = rating % 1 !== 0;
     
     for (let i = 0; i < fullStars; i++) {
-      stars.push(<Star key={`star-${i}`} className="fill-[#16A34A] text-[#16A34A] w-4 h-4" />);
+      stars.push(<Star key={`star-${i}`} className="fill-[var(--brand-primary)] text-[var(--brand-primary)] w-4 h-4" />);
     }
     
     if (hasHalfStar) {
-      stars.push(<StarHalf key="half-star" className="fill-[#16A34A] text-[#16A34A] w-4 h-4" />);
+      stars.push(<StarHalf key="half-star" className="fill-[var(--brand-primary)] text-[var(--brand-primary)] w-4 h-4" />);
     }
     
     return stars;
@@ -34,7 +34,7 @@ export default function TestimonialCard({ name, role, text, rating, image }: Tes
       transition={{ duration: 0.3 }}
     >
       <div className="flex items-center mb-6">
-        <div className="flex text-[#16A34A]">
+        <div className="flex text-[var(--brand-primary)]">
           {renderStars()}
         </div>
         <span className="ml-2 text-gray-400">{rating.toFixed(1)}</span>

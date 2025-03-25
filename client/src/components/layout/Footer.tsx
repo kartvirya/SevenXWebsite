@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center mb-6">
               <span className="text-2xl font-bold font-heading text-white">
-                7x<span className="text-[#16A34A]">Solution</span>
+                7x<span className="text-[var(--brand-primary)]">Solution</span>
               </span>
             </Link>
             <p className="text-gray-400 mb-6">
@@ -48,7 +48,7 @@ export default function Footer() {
                 <a 
                   key={index}
                   href={link.href} 
-                  className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center text-white hover:bg-[#16A34A] hover:border-[#16A34A] transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center text-white hover:bg-[var(--brand-primary)] hover:border-[var(--brand-primary)] transition-colors duration-300"
                   aria-label={link.label}
                 >
                   <link.icon className="w-4 h-4" />
@@ -65,7 +65,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link 
                     href={link.href} 
-                    className="text-gray-400 hover:text-[#16A34A] transition-colors duration-300"
+                    className="text-gray-400 hover:text-[var(--brand-primary)] transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -82,7 +82,7 @@ export default function Footer() {
                 <li key={index}>
                   <Link 
                     href={link.href} 
-                    className="text-gray-400 hover:text-[#16A34A] transition-colors duration-300"
+                    className="text-gray-400 hover:text-[var(--brand-primary)] transition-colors duration-300"
                   >
                     {link.label}
                   </Link>
@@ -96,19 +96,19 @@ export default function Footer() {
             <h4 className="text-lg font-bold font-heading mb-6">Contact Info</h4>
             <ul className="space-y-4">
               <li className="flex items-start">
-                <MapPin className="w-5 h-5 text-[#16A34A] mt-1 mr-3" />
+                <MapPin className="w-5 h-5 text-[var(--brand-primary)] mt-1 mr-3" />
                 <span className="text-gray-400">{COMPANY_ADDRESS}</span>
               </li>
               <li className="flex items-start">
-                <Mail className="w-5 h-5 text-[#16A34A] mt-1 mr-3" />
+                <Mail className="w-5 h-5 text-[var(--brand-primary)] mt-1 mr-3" />
                 <span className="text-gray-400">{COMPANY_EMAIL}</span>
               </li>
               <li className="flex items-start">
-                <Phone className="w-5 h-5 text-[#16A34A] mt-1 mr-3" />
+                <Phone className="w-5 h-5 text-[var(--brand-primary)] mt-1 mr-3" />
                 <span className="text-gray-400">{COMPANY_PHONE}</span>
               </li>
               <li className="flex items-start">
-                <Clock className="w-5 h-5 text-[#16A34A] mt-1 mr-3" />
+                <Clock className="w-5 h-5 text-[var(--brand-primary)] mt-1 mr-3" />
                 <span className="text-gray-400">{COMPANY_HOURS}</span>
               </li>
             </ul>
@@ -121,9 +121,9 @@ export default function Footer() {
             &copy; {COMPANY_COPYRIGHT_YEAR} {COMPANY_NAME}. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-gray-500 hover:text-[#16A34A] transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="text-gray-500 hover:text-[#16A34A] transition-colors duration-300">Terms of Service</a>
-            <a href="#" className="text-gray-500 hover:text-[#16A34A] transition-colors duration-300">Cookie Policy</a>
+            <a href="#" className="text-gray-500 hover:text-[var(--brand-primary)] transition-colors duration-300">Privacy Policy</a>
+            <a href="#" className="text-gray-500 hover:text-[var(--brand-primary)] transition-colors duration-300">Terms of Service</a>
+            <a href="#" className="text-gray-500 hover:text-[var(--brand-primary)] transition-colors duration-300">Cookie Policy</a>
           </div>
         </div>
       </div>

@@ -43,19 +43,19 @@ export default function Testimonials() {
       <section className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Testimonials</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Testimonials</span>
             <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">What Our Clients Say</h1>
             <p className="text-gray-400 text-lg">Discover how we've helped businesses like yours achieve exceptional results.</p>
           </AnimatedSection>
           
           <div className="max-w-4xl mx-auto">
             <AnimatedSection className="relative bg-[#1A1A1A] p-8 md:p-12 rounded-lg border border-white/10">
-              <div className="absolute top-8 left-8 text-[#16A34A] opacity-20">
+              <div className="absolute top-8 left-8 text-[var(--brand-primary)] opacity-20">
                 <Quote size={60} className="fill-current" />
               </div>
               
               <div className="relative z-10">
-                <div className="flex text-[#16A34A] mb-6">
+                <div className="flex text-[var(--brand-primary)] mb-6">
                   {[...Array(5)].map((_, i) => (
                     <svg key={i} className="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
@@ -110,7 +110,7 @@ export default function Testimonials() {
               {TESTIMONIALS.map((_, index) => (
                 <button 
                   key={index}
-                  className={`w-3 h-3 rounded-full ${activeIndex === index ? 'bg-[#16A34A]' : 'bg-gray-600'}`}
+                  className={`w-3 h-3 rounded-full ${activeIndex === index ? 'bg-[var(--brand-primary)]' : 'bg-gray-600'}`}
                   onClick={() => scrollToIndex(index)}
                   aria-label={`Go to slide ${index + 1}`}
                 ></button>
@@ -118,7 +118,7 @@ export default function Testimonials() {
             </div>
             
             <motion.div 
-              className="hidden md:flex absolute top-1/2 -translate-y-1/2 -left-4 w-12 h-12 bg-[#16A34A]/90 rounded-full items-center justify-center cursor-pointer"
+              className="hidden md:flex absolute top-1/2 -translate-y-1/2 -left-4 w-12 h-12 bg-[var(--brand-primary)]/90 rounded-full items-center justify-center cursor-pointer"
               onClick={handlePrev}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -127,7 +127,7 @@ export default function Testimonials() {
             </motion.div>
             
             <motion.div 
-              className="hidden md:flex absolute top-1/2 -translate-y-1/2 -right-4 w-12 h-12 bg-[#16A34A]/90 rounded-full items-center justify-center cursor-pointer"
+              className="hidden md:flex absolute top-1/2 -translate-y-1/2 -right-4 w-12 h-12 bg-[var(--brand-primary)]/90 rounded-full items-center justify-center cursor-pointer"
               onClick={handleNext}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -142,7 +142,7 @@ export default function Testimonials() {
       <section className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Video Testimonials</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Video Testimonials</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">See Our Clients in Action</h2>
             <p className="text-gray-400 text-lg">Watch real clients share their experiences working with 7xSolution.</p>
           </AnimatedSection>
@@ -159,7 +159,7 @@ export default function Testimonials() {
                     loading="lazy" 
                   />
                   <div className="absolute inset-0 bg-[#0D221E]/60 flex items-center justify-center">
-                    <div className="w-16 h-16 bg-[#16A34A] rounded-full flex items-center justify-center">
+                    <div className="w-16 h-16 bg-[var(--brand-primary)] rounded-full flex items-center justify-center">
                       <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8 5v14l11-7z" />
                       </svg>
@@ -179,22 +179,22 @@ export default function Testimonials() {
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <AnimatedSection className="text-center">
-              <h3 className="text-4xl font-bold text-[#16A34A] mb-2">98%</h3>
+              <h3 className="text-4xl font-bold text-[var(--brand-primary)] mb-2">98%</h3>
               <p className="text-gray-300">Client Satisfaction Rate</p>
             </AnimatedSection>
             
             <AnimatedSection className="text-center" delay={0.1}>
-              <h3 className="text-4xl font-bold text-[#16A34A] mb-2">250+</h3>
+              <h3 className="text-4xl font-bold text-[var(--brand-primary)] mb-2">250+</h3>
               <p className="text-gray-300">Projects Completed</p>
             </AnimatedSection>
             
             <AnimatedSection className="text-center" delay={0.2}>
-              <h3 className="text-4xl font-bold text-[#16A34A] mb-2">15+</h3>
+              <h3 className="text-4xl font-bold text-[var(--brand-primary)] mb-2">15+</h3>
               <p className="text-gray-300">Years Experience</p>
             </AnimatedSection>
             
             <AnimatedSection className="text-center" delay={0.3}>
-              <h3 className="text-4xl font-bold text-[#16A34A] mb-2">700%</h3>
+              <h3 className="text-4xl font-bold text-[var(--brand-primary)] mb-2">700%</h3>
               <p className="text-gray-300">Average ROI</p>
             </AnimatedSection>
           </div>
@@ -203,9 +203,9 @@ export default function Testimonials() {
       
       {/* CTA Section */}
       <section className="py-16 bg-[#0D221E]/70 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#16A34A] opacity-10 z-0"></div>
-        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
-        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute inset-0 bg-[var(--brand-primary)] opacity-10 z-0"></div>
+        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
@@ -213,7 +213,7 @@ export default function Testimonials() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join our satisfied clients and experience the 7xSolution difference for yourself.</p>
             <motion.a 
               href="/contact"
-              className="inline-block bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300"
+              className="inline-block bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >

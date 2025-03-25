@@ -29,7 +29,7 @@ export default function PortfolioItem({ title, category, description, image }: P
         variants={portfolioOverlay}
         initial="hidden"
       >
-        <span className="text-[#16A34A] text-sm font-medium">{category}</span>
+        <span className="text-[var(--brand-primary)] text-sm font-medium">{category}</span>
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
         <p className="text-gray-300 text-sm mb-4">{description}</p>
         <motion.a 

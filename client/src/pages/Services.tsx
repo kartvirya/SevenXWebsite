@@ -4,7 +4,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import ServiceCard from '@/components/ui/ServiceCard';
 import { Link } from 'wouter';
 import { Button } from '@/components/ui/button';
-import { SERVICES } from '@/lib/constants';
+import { SERVICES, BRAND_PRIMARY, BRAND_DARK } from '@/lib/constants';
 
 export default function Services() {
   return (
@@ -19,7 +19,7 @@ export default function Services() {
       <section className="py-20 bg-[#111111]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Services</span>
+            <span className={`text-[${BRAND_PRIMARY}] font-medium uppercase tracking-wider text-sm`}>Our Services</span>
             <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Digital Marketing Solutions</h1>
             <p className="text-gray-400 text-lg">We offer a comprehensive suite of services designed to maximize your online presence and drive measurable results.</p>
           </AnimatedSection>
@@ -39,7 +39,7 @@ export default function Services() {
       <section className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
-            <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Our Process</span>
+            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Process</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">How We Work</h2>
             <p className="text-gray-400 text-lg">Our proven methodology ensures consistent results for all our clients.</p>
           </AnimatedSection>
@@ -47,10 +47,10 @@ export default function Services() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <AnimatedSection delay={0.1} className="text-center">
               <div className="relative">
-                <div className="w-20 h-20 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                  <span className="text-2xl font-bold text-[#16A34A]">01</span>
+                <div className="w-20 h-20 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-2xl font-bold text-[var(--brand-primary)]">01</span>
                 </div>
-                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[#16A34A]/30"></div>
+                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[var(--brand-primary)]/30"></div>
               </div>
               <h3 className="text-xl font-bold mb-4">Discovery</h3>
               <p className="text-gray-400">We analyze your business, industry, competitors, and target audience to understand your unique challenges.</p>
@@ -58,10 +58,10 @@ export default function Services() {
             
             <AnimatedSection delay={0.2} className="text-center">
               <div className="relative">
-                <div className="w-20 h-20 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                  <span className="text-2xl font-bold text-[#16A34A]">02</span>
+                <div className="w-20 h-20 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-2xl font-bold text-[var(--brand-primary)]">02</span>
                 </div>
-                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[#16A34A]/30"></div>
+                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[var(--brand-primary)]/30"></div>
               </div>
               <h3 className="text-xl font-bold mb-4">Strategy</h3>
               <p className="text-gray-400">We develop a customized digital marketing plan aligned with your business goals and target audience.</p>
@@ -69,18 +69,18 @@ export default function Services() {
             
             <AnimatedSection delay={0.3} className="text-center">
               <div className="relative">
-                <div className="w-20 h-20 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
-                  <span className="text-2xl font-bold text-[#16A34A]">03</span>
+                <div className="w-20 h-20 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-6 relative z-10">
+                  <span className="text-2xl font-bold text-[var(--brand-primary)]">03</span>
                 </div>
-                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[#16A34A]/30"></div>
+                <div className="hidden md:block absolute top-10 left-[calc(50%+2rem)] w-full h-[2px] bg-[var(--brand-primary)]/30"></div>
               </div>
               <h3 className="text-xl font-bold mb-4">Implementation</h3>
               <p className="text-gray-400">Our specialists execute the strategy with precision, leveraging cutting-edge tools and technologies.</p>
             </AnimatedSection>
             
             <AnimatedSection delay={0.4} className="text-center">
-              <div className="w-20 h-20 bg-[#16A34A]/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <span className="text-2xl font-bold text-[#16A34A]">04</span>
+              <div className="w-20 h-20 bg-[var(--brand-primary)]/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <span className="text-2xl font-bold text-[var(--brand-primary)]">04</span>
               </div>
               <h3 className="text-xl font-bold mb-4">Optimization</h3>
               <p className="text-gray-400">We continuously monitor, analyze, and refine our approach to maximize your ROI and exceed expectations.</p>
@@ -103,7 +103,7 @@ export default function Services() {
             </AnimatedSection>
             
             <AnimatedSection delay={0.2}>
-              <span className="text-[#16A34A] font-medium uppercase tracking-wider text-sm">Why Choose Us</span>
+              <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Why Choose Us</span>
               <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-6">What Sets Us Apart</h2>
               <p className="text-gray-400 mb-8">
                 At 7xSolution, we combine strategic thinking with technical expertise and creative innovation to deliver exceptional results. Here's why clients choose us:
@@ -111,8 +111,8 @@ export default function Services() {
               
               <div className="space-y-6">
                 <div className="flex">
-                  <div className="w-12 h-12 shrink-0 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <div className="w-12 h-12 shrink-0 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
@@ -123,8 +123,8 @@ export default function Services() {
                 </div>
                 
                 <div className="flex">
-                  <div className="w-12 h-12 shrink-0 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <div className="w-12 h-12 shrink-0 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                     </svg>
                   </div>
@@ -135,8 +135,8 @@ export default function Services() {
                 </div>
                 
                 <div className="flex">
-                  <div className="w-12 h-12 shrink-0 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <div className="w-12 h-12 shrink-0 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                     </svg>
                   </div>
@@ -147,8 +147,8 @@ export default function Services() {
                 </div>
                 
                 <div className="flex">
-                  <div className="w-12 h-12 shrink-0 bg-[#16A34A]/20 rounded-lg flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <div className="w-12 h-12 shrink-0 bg-[var(--brand-primary)]/20 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                   </div>
@@ -165,9 +165,9 @@ export default function Services() {
       
       {/* CTA Section */}
       <section className="py-16 bg-[#0D221E]/70 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#16A34A] opacity-10 z-0"></div>
-        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
-        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[#16A34A]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute inset-0 bg-[var(--brand-primary)] opacity-10 z-0"></div>
+        <div className="absolute -right-32 -top-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
+        <div className="absolute -left-32 -bottom-32 w-64 h-64 bg-[var(--brand-primary)]/30 rounded-full blur-[100px] z-0"></div>
         
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
@@ -175,7 +175,7 @@ export default function Services() {
             <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Let's discuss how our services can help you achieve your business goals and drive measurable results.</p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link href="/contact">
-                <Button className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
+                <Button className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105">
                   Get a Free Consultation
                 </Button>
               </Link>

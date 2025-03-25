@@ -11,14 +11,14 @@ export default function HeroSection() {
       {/* Background elements */}
       <div className="absolute inset-0 bg-[#0D221E]/20 z-0"></div>
       <div className="absolute inset-0 bg-[#111111] z-0 opacity-70"></div>
-      <div className="absolute right-0 top-0 w-full h-full blur-[100px] bg-gradient-to-b from-[#16A34A]/30 to-transparent z-0"></div>
+      <div className="absolute right-0 top-0 w-full h-full blur-[100px] bg-gradient-to-b from-[var(--brand-primary)]/30 to-transparent z-0"></div>
       
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <AnimatedSection variants={slideInLeft}>
             <h1 className="text-4xl md:text-6xl font-bold font-heading leading-tight mb-6">
-              Grow Your Business <span className="bg-gradient-to-r from-[#16A34A] to-[#0D221E] bg-clip-text text-transparent">7x Faster</span> With Our Digital Solutions
+              Grow Your Business <span className="bg-gradient-to-r from-[var(--brand-primary)] to-[#0D221E] bg-clip-text text-transparent">7x Faster</span> With Our Digital Solutions
             </h1>
             <motion.p 
               variants={textReveal}
@@ -28,12 +28,12 @@ export default function HeroSection() {
             </motion.p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/services">
-                <Button className="bg-[#16A34A] hover:bg-[#16A34A]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-center">
+                <Button className="bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 text-center">
                   Explore Services
                 </Button>
               </Link>
               <Link href="/contact">
-                <Button variant="outline" className="border-white/30 hover:border-[#16A34A]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5 text-center">
+                <Button variant="outline" className="border-white/30 hover:border-[var(--brand-primary)]/80 text-white font-medium py-3 px-8 rounded-md transition-all duration-300 hover:bg-white/5 text-center">
                   Contact Us
                 </Button>
               </Link>
@@ -75,8 +75,8 @@ export default function HeroSection() {
               transition={{ delay: 0.6, duration: 0.5 }}
             >
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 rounded-full bg-[#16A34A]/20 flex items-center justify-center">
-                  <svg className="w-6 h-6 text-[#16A34A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <div className="w-12 h-12 rounded-full bg-[var(--brand-primary)]/20 flex items-center justify-center">
+                  <svg className="w-6 h-6 text-[var(--brand-primary)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                   </svg>
                 </div>

@@ -42,7 +42,7 @@ export default function BlogCard({
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5 }}
           />
-          <div className="absolute top-4 left-4 bg-[#16A34A] text-white text-xs font-medium px-2 py-1 rounded-md">
+          <div className="absolute top-4 left-4 bg-[var(--brand-primary)] text-white text-xs font-medium px-2 py-1 rounded-md">
             {category}
           </div>
         </div>
@@ -56,7 +56,7 @@ export default function BlogCard({
         </div>
         
         <Link href={`/blog/${slug}`}>
-          <h3 className="text-xl font-bold font-heading mb-3 hover:text-[#16A34A] transition-colors duration-300 cursor-pointer">
+          <h3 className="text-xl font-bold font-heading mb-3 hover:text-[var(--brand-primary)] transition-colors duration-300 cursor-pointer">
             {title}
           </h3>
         </Link>
