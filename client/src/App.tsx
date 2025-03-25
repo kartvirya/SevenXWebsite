@@ -19,6 +19,7 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
+import ServiceDetail from "@/pages/ServiceDetail";
 
 function Router() {
   return (
