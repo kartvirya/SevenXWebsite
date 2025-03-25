@@ -96,11 +96,11 @@ export default function Testimonials() {
           <div className="relative">
             <div 
               ref={sliderRef}
-              className="flex overflow-x-auto snap-x gap-6 pb-8 -mx-4 px-4 hide-scrollbar"
+              className="flex justify-center overflow-x-auto snap-x gap-6 pb-8 -mx-4 px-4 hide-scrollbar"
               style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
             >
               {TESTIMONIALS.map((testimonial, index) => (
-                <AnimatedSection key={testimonial.id} delay={index * 0.1} className="flex-shrink-0">
+                <AnimatedSection key={testimonial.id} delay={index * 0.1} className="flex-shrink-0 w-full max-w-md">
                   <TestimonialCard {...testimonial} />
                 </AnimatedSection>
               ))}

@@ -8,11 +8,6 @@ import { COMPANY_TAGLINE, COMPANY_DESCRIPTION, COMPANY_STATS } from '@/lib/const
 export default function HeroSection() {
   return (
     <section id="home" className="pt-32 pb-20 md:pt-40 md:pb-28 min-h-screen flex items-center relative overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute inset-0 bg-[#0D221E]/20 z-0"></div>
-      <div className="absolute inset-0 bg-[#111111] z-0 opacity-70"></div>
-      <div className="absolute right-0 top-0 w-full h-full blur-[100px] bg-gradient-to-b from-[var(--brand-primary)]/30 to-transparent z-0"></div>
-      
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}

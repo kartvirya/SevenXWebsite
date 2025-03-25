@@ -19,7 +19,9 @@ import Blog from "@/pages/Blog";
 import BlogPost from "@/pages/BlogPost";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
-import ServiceDetail from "@/pages/ServiceDetail";
+
+// Components
+import ServiceDetail from "@/components/ui/ServiceDetail";
 
 function Router() {
   return (
@@ -28,7 +30,7 @@ function Router() {
         <Route path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/services" component={Services} />
-<Route path="/services/:id" component={ServiceDetail} />
+        <Route path="/services/:id" component={ServiceDetail} />
         <Route path="/portfolio" component={Portfolio} />
         <Route path="/testimonials" component={Testimonials} />
         <Route path="/blog" component={Blog} />

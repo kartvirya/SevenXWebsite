@@ -1,13 +1,19 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import dotenv from "dotenv";
+import cors from 'cors';
+import contactRoutes from './routes/contact';
+
+// Load environment variables from .env files
+dotenv.config({ path: '.env.local' });
 
 const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const host = '0.0.0.0';
-const port = 5000;
+// Middleware
+app.use(cors());
 
 app.use((req, res, next) => {
   const start = Date.now();
@@ -57,20 +63,23 @@ app.use((req, res, next) => {
     await setupVite(app, server);
   } else {
     serveStatic(app);
-    app.listen(port, host, () => {
-      console.log(`Server running at http://${host}:${port}`);
-    });
   }
 
+  // Routes
+  app.use('/api/contact', contactRoutes);
+
   // ALWAYS serve the app on port 5000
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
-  const port = 5000;
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
+  // this serves both the API and the client
+  const port = process.env.PORT || 5001;
+  try {
+    server.listen(port, () => {
+      log(`serving on port ${port}`);
+    });
+  } catch (error: any) {
+    if (error.code === 'EADDRINUSE') {
+      log(`Port ${port} is already in use. Please try a different port or kill the process using this port.`);
+      process.exit(1);
+    }
+    throw error;
+  }
 })();

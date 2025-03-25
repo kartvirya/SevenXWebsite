@@ -12,8 +12,11 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({ id, title, description, icon, features }: ServiceCardProps) {
+  // Convert title to URL-friendly slug
+  const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+  
   return (
-    <Link href={`/services/${id.toString()}`}>
+    <Link href={`/services/${slug}`}>
       <motion.div 
         className="bg-[#1A1A1A] p-8 rounded-lg hover:bg-[#222] transition-colors duration-300 cursor-pointer"
         whileHover="hover"
@@ -35,15 +38,10 @@ export default function ServiceCard({ id, title, description, icon, features }: 
           ))}
         </ul>
 
-        <Link href="/contact"> {/* This link remains, it's not clear from the prompt if it should be removed */}
-          <motion.div 
-            className="inline-flex items-center text-[var(--brand-primary)] hover:text-white group cursor-pointer"
-            whileHover={{ x: 3 }}
-          >
-            <span className="group-hover:underline">Learn More</span>
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </motion.div>
-        </Link>
+        <div className="inline-flex items-center text-[var(--brand-primary)] hover:text-white group cursor-pointer">
+          <span className="group-hover:underline">Learn More</span>
+          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+        </div>
       </motion.div>
     </Link>
   );

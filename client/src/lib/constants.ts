@@ -148,46 +148,46 @@ export const SERVICES = [
 export const TEAM_MEMBERS = [
   {
     id: 1,
-    name: "James Wilson",
-    role: "CEO & Founder",
-    bio: "Innovative marketing strategist and tech entrepreneur with a vision for digital transformation.",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    name: 'Bikash Sharma',
+    role: 'Founder',
+    bio: 'A versatile professional with 3 years of expertise in coding, digital marketing, and design. Bikash leads our team with innovative solutions and creative strategies to help businesses thrive in the digital landscape.',
+    image: '/images/team/bikash.jpg',
     social: {
-      linkedin: "#",
-      twitter: "#"
+      linkedin: '#',
+      twitter: '#'
     }
   },
   {
     id: 2,
-    name: "Sarah Johnson",
-    role: "Head of Strategy",
-    bio: "Former Google strategist with expertise in growth marketing and analytics.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    name: 'Milan Tamang',
+    role: 'CEO',
+    bio: 'With a year of specialized experience in video editing and AWS cloud solutions, Milan brings technical expertise and creative vision to our digital projects.',
+    image: '/images/team/milan.jpg',
     social: {
-      linkedin: "#",
-      twitter: "#"
+      linkedin: '#',
+      twitter: '#'
     }
   },
   {
     id: 3,
-    name: "David Rodriguez",
-    role: "Creative Director",
-    bio: "Award-winning designer who has worked with Fortune 500 companies.",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    name: 'Maulik Shahi Thakuri',
+    role: 'COO',
+    bio: 'A talented UI specialist and video editor with 1 year of experience, Maulik ensures our projects maintain the highest standards of visual quality and user experience.',
+    image: '/images/team/maulik.jpg',
     social: {
-      linkedin: "#",
-      twitter: "#"
+      linkedin: '#',
+      twitter: '#'
     }
   },
   {
     id: 4,
-    name: "Emily Chen",
-    role: "Head of SEO",
-    bio: "SEO specialist who has helped 100+ companies rank on page 1 of Google.",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+    name: 'Sirshak Aryal',
+    role: 'Sound Engineer',
+    bio: '2 years of experience in sound engineering, Sirshak brings professional audio expertise to our multimedia projects, ensuring top-notch sound quality in all our productions.',
+    image: '/images/team/sirshak.jpg',
     social: {
-      linkedin: "#",
-      twitter: "#"
+      linkedin: '#',
+      twitter: '#'
     }
   }
 ];
@@ -246,23 +246,23 @@ export const PORTFOLIO_ITEMS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Jennifer Roberts",
+    name: "Rajesh Hamal",
     role: "Marketing Director, TechVision",
     text: "7xSolution transformed our digital strategy completely. Their SEO expertise helped us achieve top rankings for our most valuable keywords, resulting in a 215% increase in organic traffic and a significant boost in qualified leads.",
-    rating: 5,
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
-  },
-  {
-    id: 2,
-    name: "Michael Chang",
-    role: "CEO, Chang Enterprises",
-    text: "The PPC campaign managed by 7xSolution exceeded all our expectations. Not only did they reduce our cost per acquisition by 42%, but they also implemented conversion rate optimization that increased our overall ROI significantly.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   },
   {
+    id: 2,
+    name: "Pradeep Khadka",
+    role: "CEO, OnTrack Studios",
+    text: "Amazing company. Had a very good experience having a prototype done quickly. I will be working with them again. Their communication, quality of delivery, and value of service were all exceptional.",
+    rating: 5,
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+  },
+  {
     id: 3,
-    name: "Sarah Johnson",
+    name: "Samriddhi Rai",
     role: "COO, FinTech Solutions",
     text: "Working with 7xSolution on our content marketing strategy has been a game-changer. Their team created a content calendar that addressed our audience's pain points perfectly, establishing us as thought leaders in our industry.",
     rating: 5,
@@ -270,11 +270,11 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
-    name: "David Wilson",
+    name: "Anmol KC",
     role: "Founder, Global Apparel",
     text: "The social media strategy developed by 7xSolution completely revitalized our brand presence. Their team's creativity and data-driven approach helped us connect with our audience in meaningful ways, resulting in a 300% increase in engagement.",
     rating: 4.5,
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   }
 ];
 
@@ -289,8 +289,8 @@ export const BLOG_POSTS = [
     date: "March 15, 2025",
     readTime: "8 min read",
     author: {
-      name: "James Wilson",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+      name: "Bikash Sharma",
+      image: "/images/team/bikash.jpg"
     },
     image: "https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     content: `
@@ -343,8 +343,8 @@ export const BLOG_POSTS = [
     date: "February 28, 2025",
     readTime: "6 min read",
     author: {
-      name: "Sarah Johnson",
-      image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+      name: "Milan Tamang",
+      image: "/images/team/milan.jpg"
     },
     image: "https://images.unsplash.com/photo-1557838923-2985c318be48?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     content: `
@@ -403,8 +403,8 @@ export const BLOG_POSTS = [
     date: "January 15, 2025",
     readTime: "5 min read",
     author: {
-      name: "David Rodriguez",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
+      name: "Maulik Shahi Thakuri",
+      image: "/images/team/maulik.jpg"
     },
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     content: `

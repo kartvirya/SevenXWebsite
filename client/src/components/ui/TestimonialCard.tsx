@@ -29,7 +29,7 @@ export default function TestimonialCard({ name, role, text, rating, image }: Tes
 
   return (
     <motion.div 
-      className="min-w-full md:min-w-[calc(50%-12px)] lg:min-w-[calc(33.333%-16px)] bg-[#1A1A1A] p-8 rounded-lg border border-white/10 flex flex-col"
+      className="w-full bg-[#1A1A1A] p-8 rounded-lg border border-white/10 flex flex-col"
       whileHover={{ y: -5 }}
       transition={{ duration: 0.3 }}
     >
