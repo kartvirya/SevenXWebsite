@@ -12,7 +12,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Initialize the Hugging Face inference client
   const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
   
-  // Chatbot endpoint
+  // Chatbot endpoint with predefined responses
   app.post("/api/chatbot", async (req, res) => {
     try {
       const { message } = req.body;
@@ -24,27 +24,44 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
       
-      // Prepare context about the company
-      const companyContext = "You are an AI assistant for 7xSolution, a digital marketing agency founded in 2025. " +
-        "We offer services including SEO, PPC, Content Marketing, Web Development, Mobile App Development, " +
-        "Web Application Development, IT Consulting, Social Media Marketing, Email Marketing, and Analytics. " +
-        "Keep responses brief and professional. Always guide users to contact us for specific inquiries.";
+      // Predefined responses based on keywords
+      const lowerMessage = message.toLowerCase();
+      let reply = '';
       
-      // Call Hugging Face API with context + user message
-      const input = `${companyContext}\n\nUser: ${message}\nAssistant:`;
-      
-      const result = await hf.textGeneration({
-        model: "meta-llama/Llama-2-7b-chat-hf",
-        inputs: input,
-        parameters: {
-          max_new_tokens: 250,
-          temperature: 0.7,
-          return_full_text: false
-        }
-      });
+      // Check for specific keywords/phrases and provide appropriate responses
+      if (lowerMessage.includes('service') || lowerMessage.includes('offer')) {
+        reply = "We offer a wide range of digital marketing and IT services including SEO, PPC, Content Marketing, Web Development, Mobile App Development, Web Application Development, IT Consulting, Social Media Marketing, Email Marketing, and Analytics. Feel free to visit our Services page for more details or contact us for specific inquiries.";
+      } 
+      else if (lowerMessage.includes('location') || lowerMessage.includes('address') || lowerMessage.includes('office')) {
+        reply = "Our office is located in Dallu, Kathmandu, near SBI Bank. We'd be happy to meet with you in person to discuss your project requirements.";
+      }
+      else if (lowerMessage.includes('contact') || lowerMessage.includes('phone') || lowerMessage.includes('call') || lowerMessage.includes('email')) {
+        reply = "You can reach us at +976-9764833730 or email us at info@7xsolution.com. We're available Monday to Friday, 9AM to 6PM.";
+      }
+      else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('quote') || lowerMessage.includes('pricing')) {
+        reply = "Our pricing depends on your specific needs and project requirements. Please contact us at +976-9764833730 or fill out our contact form, and we'll provide you with a customized quote.";
+      }
+      else if (lowerMessage.includes('seo') || lowerMessage.includes('search engine')) {
+        reply = "Our SEO services include keyword research, on-page optimization, technical SEO, content strategy, link building, and performance tracking. We focus on sustainable, white-hat techniques to improve your organic rankings.";
+      }
+      else if (lowerMessage.includes('social media') || lowerMessage.includes('facebook') || lowerMessage.includes('instagram')) {
+        reply = "Our social media marketing services include strategy development, content creation, community management, paid social campaigns, influencer partnerships, and analytics. We help businesses build meaningful connections with their audiences across all major platforms.";
+      }
+      else if (lowerMessage.includes('web') || lowerMessage.includes('website') || lowerMessage.includes('development')) {
+        reply = "We develop responsive, user-friendly websites optimized for conversions. Our web development services include custom site design, e-commerce solutions, landing pages, CMS implementation, performance optimization, and maintenance.";
+      }
+      else if (lowerMessage.includes('app') || lowerMessage.includes('mobile')) {
+        reply = "Our mobile app development team creates native and cross-platform applications for iOS and Android. We focus on intuitive UI/UX design, performance, scalability, and ongoing support to ensure your app meets business objectives.";
+      }
+      else if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
+        reply = "Hello! Welcome to 7xSolution. How can we help you with your digital marketing or IT needs today?";
+      }
+      else {
+        reply = "Thank you for your message. We'd be happy to discuss your specific needs in more detail. Please contact us at +976-9764833730 or visit our Contact page to schedule a consultation with our team.";
+      }
       
       res.json({
-        reply: result.generated_text.trim(),
+        reply: reply,
         success: true
       });
     } catch (error) {

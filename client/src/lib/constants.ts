@@ -6,11 +6,11 @@ export const BRAND_DARK = "#111111";
 export const COMPANY_NAME = "7xSolution";
 export const COMPANY_TAGLINE = "Grow Your Business 7x Faster With Our Digital Solutions";
 export const COMPANY_DESCRIPTION = "We combine strategic thinking, cutting-edge technology, and creative expertise to deliver exceptional digital marketing results.";
-export const COMPANY_PHONE = "+1 (555) 123-4567";
-export const COMPANY_PHONE_ALT = "+1 (555) 987-6543";
+export const COMPANY_PHONE = "+976-9764833730";
+export const COMPANY_PHONE_ALT = "+976-9764833730";
 export const COMPANY_EMAIL = "info@7xsolution.com";
 export const COMPANY_EMAIL_SUPPORT = "support@7xsolution.com";
-export const COMPANY_ADDRESS = "123 Marketing Street, New York, NY 10001";
+export const COMPANY_ADDRESS = "Dallu, Kathmandu, near SBI Bank";
 export const COMPANY_HOURS = "Mon-Fri: 9AM - 6PM";
 export const COMPANY_FOUNDING_YEAR = 2025;
 export const COMPANY_COPYRIGHT_YEAR = 2025;
@@ -496,8 +496,8 @@ export const BLOG_POSTS = [
 
 // Map coordinates for Google Maps
 export const MAP_COORDINATES = {
-  lat: 40.712776,
-  lng: -74.005974
+  lat: 27.7138, // Dallu, Kathmandu approximate coordinates
+  lng: 85.2952
 };
 
 // Contact form initial values
