@@ -105,8 +105,8 @@ export default function Services() {
             <AnimatedSection delay={0.2}>
               <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Why Choose Us</span>
               <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-6">What Sets Us Apart</h2>
-              <p className="text-gray-400 mb-8">
-                At 7xSolution, we combine strategic thinking with technical expertise and creative innovation to deliver exceptional results. Here's why clients choose us:
+              <p className="text-gray-300">
+                At 7xCore, we combine strategic thinking with technical expertise and creative innovation to deliver exceptional results. Here's why clients choose us:
               </p>
               
               <div className="space-y-6">

@@ -3,13 +3,13 @@ export const BRAND_PRIMARY = "#6FCFAB";
 export const BRAND_DARK = "#111111";
 
 // Company information
-export const COMPANY_NAME = "7xSolution";
+export const COMPANY_NAME = "7xCore";
 export const COMPANY_TAGLINE = "Grow Your Business 7x Faster With Our Digital Solutions";
 export const COMPANY_DESCRIPTION = "We combine strategic thinking, cutting-edge technology, and creative expertise to deliver exceptional digital marketing results.";
 export const COMPANY_PHONE = "+976-9764833730";
 export const COMPANY_PHONE_ALT = "+976-9764833730";
-export const COMPANY_EMAIL = "info@7xsolution.com";
-export const COMPANY_EMAIL_SUPPORT = "support@7xsolution.com";
+export const COMPANY_EMAIL = "info@7xcore.com";
+export const COMPANY_EMAIL_SUPPORT = "support@7xcore.com";
 export const COMPANY_ADDRESS = "Dallu, Kathmandu, near SBI Bank";
 export const COMPANY_HOURS = "Mon-Fri: 9AM - 6PM";
 export const COMPANY_FOUNDING_YEAR = 2025;
@@ -33,7 +33,7 @@ export const SOCIAL_LINKS = {
 // Services
 export const SERVICES = [
   {
-    id: 1,
+    id: "1",
     title: "Search Engine Optimization",
     description: "Improve your visibility in search results and drive organic traffic with our data-driven SEO strategies.",
     icon: "search",
@@ -44,7 +44,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 2,
+    id: "2",
     title: "Pay-Per-Click Advertising",
     description: "Drive qualified traffic and generate immediate leads with our targeted PPC campaigns.",
     icon: "ad",
@@ -55,7 +55,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 3,
+    id: "3",
     title: "Content Marketing",
     description: "Engage your audience and build brand authority with compelling, SEO-optimized content.",
     icon: "pen-fancy",
@@ -66,7 +66,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 4,
+    id: "4",
     title: "Web Development",
     description: "Create stunning, responsive websites that drive conversions and enhance your brand's online presence.",
     icon: "laptop-code",
@@ -77,7 +77,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 5,
+    id: "5",
     title: "Mobile App Development",
     description: "Build cutting-edge mobile applications for iOS and Android that deliver exceptional user experiences.",
     icon: "mobile-alt",
@@ -88,7 +88,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 6,
+    id: "6",
     title: "Web Application Development",
     description: "Create powerful, scalable web applications with modern technologies and best practices.",
     icon: "code",
@@ -99,7 +99,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 7,
+    id: "7",
     title: "IT Consulting Services",
     description: "Strategic technology advisory to help your business leverage the right IT solutions for growth.",
     icon: "server",
@@ -110,7 +110,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 8,
+    id: "8",
     title: "Social Media Marketing",
     description: "Build community and drive engagement with strategic social media campaigns.",
     icon: "share-alt",
@@ -121,7 +121,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 9,
+    id: "9",
     title: "Email Marketing",
     description: "Nurture leads and drive conversions with targeted email campaigns and automation.",
     icon: "envelope",
@@ -132,7 +132,7 @@ export const SERVICES = [
     ]
   },
   {
-    id: 10,
+    id: "10",
     title: "Analytics & Reporting",
     description: "Gain actionable insights with comprehensive analytics and custom reporting.",
     icon: "chart-bar",
@@ -248,7 +248,7 @@ export const TESTIMONIALS = [
     id: 1,
     name: "Rajesh Hamal",
     role: "Marketing Director, TechVision",
-    text: "7xSolution transformed our digital strategy completely. Their SEO expertise helped us achieve top rankings for our most valuable keywords, resulting in a 215% increase in organic traffic and a significant boost in qualified leads.",
+    text: "7xCore transformed our digital strategy completely. Their SEO expertise helped us achieve top rankings for our most valuable keywords, resulting in a 215% increase in organic traffic and a significant boost in qualified leads.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   },
@@ -264,7 +264,7 @@ export const TESTIMONIALS = [
     id: 3,
     name: "Samriddhi Rai",
     role: "COO, FinTech Solutions",
-    text: "Working with 7xSolution on our content marketing strategy has been a game-changer. Their team created a content calendar that addressed our audience's pain points perfectly, establishing us as thought leaders in our industry.",
+    text: "Working with 7xCore on our content marketing strategy has been a game-changer. Their team created a content calendar that addressed our audience's pain points perfectly, establishing us as thought leaders in our industry.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   },
@@ -272,7 +272,7 @@ export const TESTIMONIALS = [
     id: 4,
     name: "Anmol KC",
     role: "Founder, Global Apparel",
-    text: "The social media strategy developed by 7xSolution completely revitalized our brand presence. Their team's creativity and data-driven approach helped us connect with our audience in meaningful ways, resulting in a 300% increase in engagement.",
+    text: "The social media strategy developed by 7xCore completely revitalized our brand presence. Their team's creativity and data-driven approach helped us connect with our audience in meaningful ways, resulting in a 300% increase in engagement.",
     rating: 4.5,
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   }

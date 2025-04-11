@@ -36,7 +36,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         reply = "Our office is located in Dallu, Kathmandu, near SBI Bank. We'd be happy to meet with you in person to discuss your project requirements.";
       }
       else if (lowerMessage.includes('contact') || lowerMessage.includes('phone') || lowerMessage.includes('call') || lowerMessage.includes('email')) {
-        reply = "You can reach us at +976-9764833730 or email us at info@7xsolution.com. We're available Monday to Friday, 9AM to 6PM.";
+        reply = "You can reach us at +976-9764833730 or email us at info@7xcore.com. We're available Monday to Friday, 9AM to 6PM.";
       }
       else if (lowerMessage.includes('price') || lowerMessage.includes('cost') || lowerMessage.includes('quote') || lowerMessage.includes('pricing')) {
         reply = "Our pricing depends on your specific needs and project requirements. Please contact us at +976-9764833730 or fill out our contact form, and we'll provide you with a customized quote.";
@@ -54,7 +54,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         reply = "Our mobile app development team creates native and cross-platform applications for iOS and Android. We focus on intuitive UI/UX design, performance, scalability, and ongoing support to ensure your app meets business objectives.";
       }
       else if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-        reply = "Hello! Welcome to 7xSolution. How can we help you with your digital marketing or IT needs today?";
+        reply = "Hello! Welcome to 7xCore. How can we help you with your digital marketing or IT needs today?";
       }
       else {
         reply = "Thank you for your message. We'd be happy to discuss your specific needs in more detail. Please contact us at +976-9764833730 or visit our Contact page to schedule a consultation with our team.";

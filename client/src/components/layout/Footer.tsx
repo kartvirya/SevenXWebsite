@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="flex items-center mb-6">
               <span className="text-2xl font-bold font-heading text-white">
-                7x<span className="text-[var(--brand-primary)]">Solution</span>
+                7x<span className="text-[var(--brand-primary)]">Core</span>
               </span>
             </Link>
             <p className="text-gray-400 mb-6">
@@ -48,7 +48,7 @@ export default function Footer() {
                 <a 
                   key={index}
                   href={link.href} 
-                  className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center text-white hover:bg-[var(--brand-primary)] hover:border-[var(--brand-primary)] transition-colors duration-300"
+                  className="w-10 h-10 rounded-full bg-[#111111] border border-white/10 flex items-center justify-center text-white hover:bg-[var(--brand-primary)] hover:border-[var(--brand-primary)] hover:text-black transition-colors duration-300"
                   aria-label={link.label}
                 >
                   <link.icon className="w-4 h-4" />

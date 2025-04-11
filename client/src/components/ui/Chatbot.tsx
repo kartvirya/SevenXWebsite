@@ -24,7 +24,7 @@ export default function Chatbot() {
     if (messages.length === 0) {
       setMessages([
         {
-          text: "Hi there! 👋 I'm the 7xSolution AI assistant. How can I help you with your digital marketing or IT needs today?",
+          text: "Hi there! 👋 I'm the 7xCore AI assistant. How can I help you with your digital marketing or IT needs today?",
           isUser: false,
           timestamp: new Date()
         }
@@ -134,7 +134,7 @@ export default function Chatbot() {
             <div className="bg-[#6FCFAB] text-black px-4 py-3 rounded-t-lg flex justify-between items-center">
               <div className="flex items-center gap-2">
                 <MessageSquare size={20} />
-                <h3 className="font-bold">7xSolution Assistant</h3>
+                <h3 className="font-bold">7xCore Assistant</h3>
               </div>
               <Button 
                 variant="ghost" 

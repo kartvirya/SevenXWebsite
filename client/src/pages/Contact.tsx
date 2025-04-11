@@ -3,10 +3,44 @@ import { pageTransition } from '@/lib/animations';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import ContactForm from '@/components/ui/ContactForm';
 import GoogleMap from '@/components/ui/GoogleMap';
-import { MapPin, Mail, Phone, Clock } from 'lucide-react';
+import { MapPin, Mail, Phone, Clock, ChevronDown } from 'lucide-react';
 import { COMPANY_ADDRESS, COMPANY_EMAIL, COMPANY_EMAIL_SUPPORT, COMPANY_PHONE, COMPANY_PHONE_ALT, COMPANY_HOURS } from '@/lib/constants';
+import { useState } from 'react';
 
 export default function Contact() {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+  
+  const faqs = [
+    { 
+      question: "What services does 7xCore offer?", 
+      answer: "7xCore offers a comprehensive range of digital marketing services including SEO, PPC, content marketing, social media marketing, email marketing, and web analytics." 
+    },
+    { 
+      question: "How long does it take to see results from digital marketing?", 
+      answer: "Results timelines vary depending on the service and your starting point. SEO typically takes 3-6 months to show significant results, while PPC can generate traffic immediately. During our initial consultation, we'll provide realistic timelines based on your specific goals." 
+    },
+    { 
+      question: "How do you measure the success of marketing campaigns?", 
+      answer: "We establish clear KPIs aligned with your business objectives at the start of every campaign. These may include traffic growth, conversion rates, lead quality, or ROI. We provide regular reports with transparent metrics and insights on performance." 
+    },
+    { 
+      question: "What is your pricing structure?", 
+      answer: "Our pricing is customized based on your specific needs, goals, and the scope of work required. We offer both project-based and retainer options. During our initial consultation, we'll discuss your requirements and provide a detailed proposal with transparent pricing." 
+    },
+    { 
+      question: "Do you work with businesses in specific industries?", 
+      answer: "We have experience across multiple industries including SaaS, e-commerce, healthcare, financial services, real estate, and more. Our diverse experience allows us to apply best practices while understanding the unique challenges of your specific industry." 
+    }
+  ];
+
+  const toggleFaq = (index: number) => {
+    if (openFaqIndex === index) {
+      setOpenFaqIndex(null);
+    } else {
+      setOpenFaqIndex(index);
+    }
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -99,33 +133,26 @@ export default function Contact() {
           </AnimatedSection>
           
           <div className="max-w-3xl mx-auto">
-            <div className="space-y-6">
-              {[
-                { 
-                  question: "What services does 7xSolution offer?", 
-                  answer: "We offer a comprehensive suite of digital marketing services including SEO, PPC advertising, content marketing, social media marketing, email marketing, and analytics/reporting solutions. Our team tailors strategies to meet your specific business goals." 
-                },
-                { 
-                  question: "How long does it take to see results from digital marketing?", 
-                  answer: "Results timelines vary depending on the service and your starting point. SEO typically takes 3-6 months to show significant results, while PPC can generate traffic immediately. During our initial consultation, we'll provide realistic timelines based on your specific goals." 
-                },
-                { 
-                  question: "How do you measure the success of marketing campaigns?", 
-                  answer: "We establish clear KPIs aligned with your business objectives at the start of every campaign. These may include traffic growth, conversion rates, lead quality, or ROI. We provide regular reports with transparent metrics and insights on performance." 
-                },
-                { 
-                  question: "What is your pricing structure?", 
-                  answer: "Our pricing is customized based on your specific needs, goals, and the scope of work required. We offer both project-based and retainer options. During our initial consultation, we'll discuss your requirements and provide a detailed proposal with transparent pricing." 
-                },
-                { 
-                  question: "Do you work with businesses in specific industries?", 
-                  answer: "We have experience across multiple industries including SaaS, e-commerce, healthcare, financial services, real estate, and more. Our diverse experience allows us to apply best practices while understanding the unique challenges of your specific industry." 
-                }
-              ].map((faq, index) => (
-                <AnimatedSection key={index} delay={index * 0.1} className="bg-[#111111] rounded-lg p-6 border border-white/10">
-                  <h3 className="text-xl font-bold mb-3">{faq.question}</h3>
-                  <p className="text-gray-400">{faq.answer}</p>
-                </AnimatedSection>
+            <div id="faq" className="flex flex-col space-y-4 mt-6">
+              {faqs.map((faq, index) => (
+                <div key={index} className="border border-white/10 rounded-lg overflow-hidden">
+                  <button 
+                    onClick={() => toggleFaq(index)} 
+                    className="flex justify-between w-full px-6 py-4 text-left text-white font-medium focus:outline-none focus-visible:ring focus-visible:ring-[var(--brand-primary)] focus-visible:ring-opacity-75"
+                  >
+                    <span>{faq.question}</span>
+                    <ChevronDown
+                      className={`${
+                        openFaqIndex === index ? 'transform rotate-180' : ''
+                      } w-5 h-5 text-[var(--brand-primary)] transition-transform duration-200`}
+                    />
+                  </button>
+                  {openFaqIndex === index && (
+                    <div className="px-6 py-4 text-gray-400 bg-white/5">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
               ))}
             </div>
           </div>

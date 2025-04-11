@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { MAP_COORDINATES } from '@/lib/constants';
 import { MapPin } from 'lucide-react';
+import { COMPANY_ADDRESS, COMPANY_PHONE } from '@/lib/constants';
 
 interface GoogleMapProps {
   height?: string;
+  zoom?: number;
 }
 
 export default function GoogleMap({ height = "h-64" }: GoogleMapProps) {
@@ -29,9 +31,11 @@ export default function GoogleMap({ height = "h-64" }: GoogleMapProps) {
             <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800 opacity-80"></div>
             <div className="z-10 flex flex-col items-center">
               <MapPin size={40} className="text-primary mb-3" />
-              <h3 className="text-white font-medium text-lg mb-2">7xSolution</h3>
-              <p className="text-gray-300 mb-1">Dallu, Kathmandu</p>
-              <p className="text-gray-300 mb-1">Near SBI Bank</p>
+              <div className="bg-black p-3 rounded-lg shadow-lg">
+                <h3 className="text-white font-medium text-lg mb-2">7xCore</h3>
+                <p className="text-gray-300">{COMPANY_ADDRESS}</p>
+                <p className="text-gray-300 mt-2">{COMPANY_PHONE}</p>
+              </div>
               <div className="mt-4 px-4 py-2 bg-primary text-white rounded-md text-sm flex items-center justify-center">
                 Get Directions
               </div>

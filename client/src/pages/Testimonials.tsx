@@ -144,7 +144,7 @@ export default function Testimonials() {
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
             <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Video Testimonials</span>
             <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">See Our Clients in Action</h2>
-            <p className="text-gray-400 text-lg">Watch real clients share their experiences working with 7xSolution.</p>
+            <p className="text-gray-400 text-lg">Watch real clients share their experiences working with 7xCore.</p>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -210,7 +210,7 @@ export default function Testimonials() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <AnimatedSection className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-6">Ready to Be Our Next Success Story?</h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join our satisfied clients and experience the 7xSolution difference for yourself.</p>
+            <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join our satisfied clients and experience the 7xCore difference for yourself.</p>
             <motion.a 
               href="/contact"
               className="inline-block bg-[var(--brand-primary)] hover:bg-[var(--brand-primary)]/90 text-white font-medium py-3 px-8 rounded-md transition-all duration-300"

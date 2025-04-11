@@ -16,17 +16,19 @@ export default function About() {
     >
       <section className="py-20 bg-[#1A1A1A]">
         <div className="container mx-auto px-4 md:px-8">
-          <AnimatedSection className="mb-12 text-center max-w-3xl mx-auto">
-            <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">About Us</span>
-            <h1 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">Innovating Digital Solutions</h1>
-            <p className="text-gray-400 text-lg">A young and dynamic team dedicated to transforming businesses through technology and creativity.</p>
-          </AnimatedSection>
+          <div className="max-w-3xl mx-auto text-center mb-12 md:mb-20">
+            <div className="inline-block px-3 py-1 rounded-full bg-[var(--brand-primary)]/10 text-[var(--brand-primary)] text-sm font-medium mb-4">About Us</div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">We're <span className="text-[var(--brand-primary)]">7xCore</span></h1>
+            <p className="text-xl text-gray-300">
+              At 7xCore, we combine technical expertise with creative innovation to deliver exceptional digital solutions. Our young and dynamic team brings fresh perspectives and cutting-edge skills to every project we undertake.
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
             <AnimatedSection className="order-2 lg:order-1" variants={fadeIn}>
               <h2 className="text-2xl font-bold font-heading mb-6">Our Mission & Vision</h2>
               <p className="text-gray-300 mb-6">
-                At 7xSolution, we combine technical expertise with creative innovation to deliver exceptional digital solutions. Our young and dynamic team brings fresh perspectives and cutting-edge skills to every project we undertake.
+                At 7xCore, we combine technical expertise with creative innovation to deliver exceptional digital solutions. Our young and dynamic team brings fresh perspectives and cutting-edge skills to every project we undertake.
               </p>
               <p className="text-gray-300 mb-8">
                 Our vision is to empower businesses with modern digital solutions that drive growth and success in today's competitive landscape. We believe in the power of technology, creativity, and strategic thinking to achieve remarkable results.
@@ -73,7 +75,7 @@ export default function About() {
 
           <AnimatedSection className="text-center mb-12 mt-20">
             <h2 className="text-2xl font-bold font-heading">Our Leadership Team</h2>
-            <p className="text-gray-400 mt-4">Meet the talented individuals driving innovation and excellence at 7xSolution</p>
+            <p className="text-gray-400 mt-4">Meet the talented individuals driving innovation and excellence at 7xCore</p>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -91,7 +93,7 @@ export default function About() {
         <div className="container mx-auto px-4 md:px-8">
           <AnimatedSection className="mb-16 text-center max-w-3xl mx-auto">
             <span className="text-[var(--brand-primary)] font-medium uppercase tracking-wider text-sm">Our Journey</span>
-            <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">The 7xSolution Story</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-heading mt-2 mb-4">The 7xCore Story</h2>
             <p className="text-gray-400 text-lg">Our path to becoming a dynamic digital solutions provider.</p>
           </AnimatedSection>
           
@@ -102,7 +104,7 @@ export default function About() {
               </div>
               <div className="ml-8 md:ml-16">
                 <h3 className="text-xl font-bold text-white mb-2">Company Founded</h3>
-                <p className="text-gray-400">7xSolution was established with a vision to provide innovative digital solutions combining technical expertise with creative excellence.</p>
+                <p className="text-gray-400">7xCore was established with a vision to provide innovative digital solutions combining technical expertise with creative excellence.</p>
               </div>
             </AnimatedSection>
             

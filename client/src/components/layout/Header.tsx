@@ -62,7 +62,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold font-heading text-white">7x<span className="text-[#6FCFAB]">Solution</span></span>
+            <span className="text-2xl font-bold font-heading text-white">7x<span className="text-[#6FCFAB]">Core</span></span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -91,7 +91,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <Link href="/contact" className="hidden md:block">
-            <Button className="bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium transition-all duration-300 transform hover:scale-105">
+            <Button className="bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium transition-all duration-300 transform hover:scale-105 rounded-full px-6">
               Get Started
             </Button>
           </Link>
@@ -121,7 +121,7 @@ export default function Header() {
                 </Link>
               ))}
               <Link href="/contact" className="mt-6">
-                <Button className="w-full bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium py-6 text-lg">
+                <Button className="w-full bg-[#6FCFAB] hover:bg-[#6FCFAB]/90 text-black font-medium py-6 text-lg rounded-full">
                   Get Started
                 </Button>
               </Link>
