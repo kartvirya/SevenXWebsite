@@ -62,7 +62,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <img src="/images/logo-placeholder.png" alt="7xCore Logo" className="h-14 w-auto" />
+            <img src="/images/logo-placeholder.png" alt="7xCore Logo" className="h-12 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}

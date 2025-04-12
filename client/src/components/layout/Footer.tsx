@@ -35,11 +35,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div>
-            <Link href="/" className="flex items-center mb-6">
-              <span className="text-2xl font-bold font-heading text-white">
-                7x<span className="text-[var(--brand-primary)]">Core</span>
-              </span>
-            </Link>
+          <Link href="/" className="flex items-center space-x-2">
+            <img src="/images/logo-placeholder.png" alt="7xCore Logo" className="h-8 w-auto" />
+          </Link>
             <p className="text-gray-400 mb-6">
               Innovative digital marketing solutions that drive measurable results and help businesses achieve exponential growth.
             </p>

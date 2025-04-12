@@ -246,15 +246,15 @@ export const PORTFOLIO_ITEMS = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    name: "Rajesh Hamal",
-    role: "Marketing Director, TechVision",
+    name: "Srizan",
+    role: "Founder, Sighra",
     text: "7xCore transformed our digital strategy completely. Their SEO expertise helped us achieve top rankings for our most valuable keywords, resulting in a 215% increase in organic traffic and a significant boost in qualified leads.",
     rating: 5,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80"
   },
   {
     id: 2,
-    name: "Pradeep Khadka",
+    name: "Mark Johnson",
     role: "CEO, OnTrack Studios",
     text: "Amazing company. Had a very good experience having a prototype done quickly. I will be working with them again. Their communication, quality of delivery, and value of service were all exceptional.",
     rating: 5,
@@ -270,7 +270,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
-    name: "Anmol KC",
+    name: "Anmol Khadka",
     role: "Founder, Global Apparel",
     text: "The social media strategy developed by 7xCore completely revitalized our brand presence. Their team's creativity and data-driven approach helped us connect with our audience in meaningful ways, resulting in a 300% increase in engagement.",
     rating: 4.5,

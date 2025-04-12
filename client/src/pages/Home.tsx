@@ -11,6 +11,11 @@ import BlogCard from '@/components/ui/BlogCard';
 
 import { SERVICES, PORTFOLIO_ITEMS, TESTIMONIALS, BLOG_POSTS } from '@/lib/constants';
 
+const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 1 } }
+};
+
 export default function Home() {
   return (
     <motion.div
@@ -18,7 +23,7 @@ export default function Home() {
       animate="visible"
       exit="exit"
       variants={pageTransition}
-      className="pt-24 relative"
+      className="pt-8 relative"
     >
       <div className="gradient-overlay" />
       {/* Hero Section */}

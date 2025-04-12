@@ -13,7 +13,7 @@ export default function HeroSection() {
           {/* Text Content */}
           <AnimatedSection variants={slideInLeft}>
             <h1 className="text-4xl md:text-6xl font-bold font-heading leading-tight mb-6">
-              Grow Your Business <span className="bg-gradient-to-r from-[var(--brand-primary)] to-[#0D221E] bg-clip-text text-transparent">7x Faster</span> With Our Digital Solutions
+              Grow Your Business <span className="bg-gradient-to-r from-[#34675e] to-[var(--brand-primary)] bg-clip-text text-transparent">7x Faster</span> With Our Digital Solutions
             </h1>
             <motion.p 
               variants={textReveal}
@@ -64,7 +64,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#111111] to-transparent opacity-70"></div>
             </div>
             <motion.div 
-              className="absolute -bottom-6 -left-6 bg-[#1A1A1A] p-6 rounded-lg shadow-xl border border-white/10"
+              className="absolute -bottom-6 -right bg-[#1A1A1A] p-6 rounded-lg shadow-xl border border-white/10"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6, duration: 0.5 }}
